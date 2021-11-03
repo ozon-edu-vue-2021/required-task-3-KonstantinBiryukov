@@ -1,5 +1,5 @@
 <template>
-    <div class="person">
+    <div class="person" @click:outside="$emit('clickOutside'); console.log(1);">
         <div class="person__photo">
             <img
                 :src="person.picture"
